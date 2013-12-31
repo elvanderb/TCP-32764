@@ -1,0 +1,12 @@
+Some random code/data about the backdoor I found in my Linksys WAG200G (TCP/32764).
+
+The backdoor may be present in other hardware, I'll update this readme accordingly :)
+
+Backdoor confirmed in :
+- Linksys WAG200G
+
+Backdoor may be present in :
+- NetGear DG934 [probability : 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
+- Netgear DG834 (http://www.netgear-forum.com/forum/index.php?showtopic=6192)
+- Netgear WPNT834 (http://forum1.netgear.com/showthread.php?p=270354)
+- Netgear DG834G (http://superuser.com/questions/166627/netgear-router-listening-on-port-32764)
