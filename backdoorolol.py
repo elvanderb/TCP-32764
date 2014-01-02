@@ -21,7 +21,7 @@ s.close()
 sig, ret_val, ret_len = struct.unpack('<III', r)
 if sig == 0x53634D4D :
 	endianness = "<"
-elif sig == 0x53634D4D :
+elif sig == 0x4D4D6353 :
 	endianness = ">"
 else :
 	print "probably not vulnerable"
