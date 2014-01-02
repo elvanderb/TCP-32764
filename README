@@ -14,6 +14,7 @@ Backdoor confirmed in:
 - DGN1000 Netgear N150 (https://github.com/elvanderb/TCP-32764/issues/3)
 - Netgear DG834G V2 firmware 4.01.40 (thanks Burn2 Dev)
 - Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
+- Linksys WAG120N (https://twitter.com/p_w999/status/418856260973252608/photo/1)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
@@ -32,6 +33,7 @@ Backdoor is not working in:
 - Netgear WGR614v3 (https://github.com/elvanderb/TCP-32764/issues/8)
 - Netgear WNDR4500 (https://twitter.com/TechnicalRah/status/418826996873834496)
 - Netgear WNDR4000 (https://github.com/elvanderb/TCP-32764/issues/10)
+- Netgear R7000 (https://twitter.com/LRFLEW/status/418856141032935424)
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
