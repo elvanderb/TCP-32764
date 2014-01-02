@@ -2,11 +2,16 @@ Some random code/data about the backdoor I found in my Linksys WAG200G (TCP/3276
 
 The backdoor may be present in other hardware, I'll update this readme accordingly :)
 
+Probable source of the backdoor: 
+- SerComm https://news.ycombinator.com/item?id=6998258 (nice finding :) )
+
 Backdoor confirmed in:
 - Linksys WAG200G
 - Netgear DM111Pv2 (https://twitter.com/eguaj/status/418143024019816448)
 - Linksys WAG320N  (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - Linksys WAG54G2 (https://twitter.com/_xistence/status/418616691040350208)
+- DGN1000 Netgear N150 (https://github.com/elvanderb/TCP-32764/issues/3)
+- Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
@@ -15,6 +20,9 @@ Backdoor may be present in:
 - Netgear DG834G (http://superuser.com/questions/166627/netgear-router-listening-on-port-32764)
 - Netgear WG602, WGR614, DGN2000 (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - Linksys WAG120N, WAG160N, WRVS4400N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
+- all SerComm manufactured devices (https://news.ycombinator.com/item?id=6998258)
 
 Backdoor is not working in:
 - Netgear WNR3500v2 (http://pastebin.com/MCscWHZs))
+- Netgear WGR614v7  (thanks "Martin from germany" [your e-mail doesn't work])
+
