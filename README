@@ -25,3 +25,4 @@ Backdoor may be present in:
 Backdoor is not working in:
 - Netgear WGR614v7 (thanks "Martin from germany" [your e-mail doesn't work])
 - Netgear WNDR3700 (https://twitter.com/juliengrenier/status/418748575842304000)
+- Netgear CG3100 (https://github.com/elvanderb/TCP-32764/issues/6)
