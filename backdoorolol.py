@@ -5,16 +5,16 @@ import sys
 HOST = '192.168.1.1'
 PORT = 32764
 
-def send_message(s, message, payload='') :
+def send_message(s, message, payload=''):
 	header = struct.pack('<III', 0x53634D4D, message, len(payload))
 	s.send(header+payload)
 	sig, ret_val, ret_len = struct.unpack('<III', s.recv(0xC))
 	assert(sig == 0x53634D4D)
-	if ret_val != 0 :
+	if ret_val != 0:
 		return ret_val, "ERROR"
 	ret_str = ""
-	while len(ret_str) < ret_len :
-		ret_str += s.recv(ret_len-len(ret_str))
+	while len(ret_str) < ret_len:
+		ret_str += s.recv(ret_len - len(ret_str))
 	return ret_val, ret_str
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -23,9 +23,9 @@ send_message(s, 3, "wlan_mgr_enable=1")
 print send_message(s, 2, "http_password")[1]
 
 while 1 :
-	print send_message(s, 7,sys.stdin.readline().strip('\n'))[1]
+	print send_message(s, 7, sys.stdin.readline().strip('\n'))[1]
 
-s.close() 
+s.close()
 
 #commands :
 # 1 : get infos
