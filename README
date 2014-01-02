@@ -11,13 +11,13 @@ Backdoor confirmed in:
 - Linksys WAG320N  (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - Linksys WAG54G2 (https://twitter.com/_xistence/status/418616691040350208)
 - DGN1000 Netgear N150 (https://github.com/elvanderb/TCP-32764/issues/3)
+- Netgear DG834G V2 firmware 4.01.40 (thanks Burn2 Dev)
 - Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
 - Netgear DG834 (http://www.netgear-forum.com/forum/index.php?showtopic=6192)
 - Netgear WPNT834 (http://forum1.netgear.com/showthread.php?p=270354)
-- Netgear DG834G (http://superuser.com/questions/166627/netgear-router-listening-on-port-32764)
 - Netgear WG602, WGR614, DGN2000 (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - Linksys WAG120N, WAG160N, WRVS4400N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - all SerComm manufactured devices (https://news.ycombinator.com/item?id=6998258)
@@ -26,3 +26,8 @@ Backdoor is not working in:
 - Netgear WGR614v7 (thanks "Martin from germany" [your e-mail doesn't work])
 - Netgear WNDR3700 (https://twitter.com/juliengrenier/status/418748575842304000)
 - Netgear CG3100 (https://github.com/elvanderb/TCP-32764/issues/6)
+
+Some clarifications:
+I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
+ 
+I had a lot of fun in writing / drawing those slides, all the necessary informations are in them, if people don't understand them or find them "too full of meme" then - well - it's too bad for them :)
