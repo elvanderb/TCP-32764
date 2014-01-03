@@ -6,6 +6,9 @@ The backdoor may be present in other hardware, I'll update this readme according
 Probable source of the backdoor: 
 - SerComm https://news.ycombinator.com/item?id=6998258 (nice finding :) )
 
+Backdoor **LISTENING ON THE INTERNET** confirmed in :
+- Netgear DG834B V5.01.14 (https://twitter.com/domainzero/status/419133964528263169)
+
 Backdoor confirmed in:
 - Linksys WAG200G
 - Netgear DM111Pv2 (https://twitter.com/eguaj/status/418143024019816448)
@@ -23,7 +26,6 @@ Backdoor confirmed in:
 - NetGear DG834 v3 (thanks jd)
 - Netgear DG834[GB, N] version < 5 (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
 - Netgear DGN2000B (https://github.com/elvanderb/TCP-32764/issues/26)
-- Netgear DG834B V5.01.14 **/!\ LISTENING ON THE INTERNET /!\** (https://twitter.com/domainzero/status/419133964528263169)
 - Linksys WRVS4400N (Firmware Version:V2.0.2.1) (https://github.com/elvanderb/TCP-32764/issues/29)
 
 Backdoor may be present in:
