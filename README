@@ -24,12 +24,13 @@ Backdoor confirmed in:
 - Netgear DG834[GB, N] version < 5 (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
 - Netgear DGN2000B (https://github.com/elvanderb/TCP-32764/issues/26)
 - Netgear DG834B V5.01.14 **/!\ LISTENING ON THE INTERNET /!\** (https://twitter.com/domainzero/status/419133964528263169)
+- Linksys WRVS4400N (Firmware Version:V2.0.2.1) (https://github.com/elvanderb/TCP-32764/issues/29)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
 - Netgear WPNT834 (http://forum1.netgear.com/showthread.php?p=270354)
 - Netgear WG602, WGR614 (v3 doesn't work, maybe others...), DGN2000 (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
-- Linksys WAG160N, WRVS4400N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
+- Linksys WAG160N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - all SerComm manufactured devices (https://news.ycombinator.com/item?id=6998258)
 
 Backdoor is not working in:
