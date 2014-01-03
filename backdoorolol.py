@@ -16,6 +16,7 @@ command_group.add_argument('--get_var', type=str, nargs='?', metavar='var_name',
 command_group.add_argument('--set_var', type=str, nargs='?', metavar='var_name=val', help='set router\'s configuration variable')
 command_group.add_argument('--message', type=int, nargs='?', help='message to send', choices=range(1, 14))
 parser.add_argument('--payload', type=str, nargs='?', help='message\'s payload', default='')
+parser.add_argument('--timeout', type=int, nargs='?', help='connexion timeout in seconds', default=1)
 
 args = parser.parse_args()
 
@@ -45,7 +46,7 @@ def send_message(s, endianness, message, payload=''):
 
 # Big endian or little endian ?
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.settimeout(1)
+s.settimeout(args.timeout)
 try :
 	s.connect((args.ip, args.port))
 except socket.error, v:
@@ -70,7 +71,7 @@ else :
 s.close()
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.settimeout(1)
+s.settimeout(args.timeout)
 s.connect((args.ip, args.port))
 if args.is_vuln :
 	print "%s:%d is vulnerable!"%(args.ip, args.port)
