@@ -19,13 +19,13 @@ Backdoor confirmed in:
 - Linksys WAG160n (https://twitter.com/xxchinasaurxx/status/418886166700507136)
 - LevelOne WBR3460B (http://www.securityfocus.com/archive/101/507219/30/0/threaded)
 - Netgear DGN3500 (https://github.com/elvanderb/TCP-32764/issues/13)
+- NetGear DG834 v3 (thanks jd)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
-- Netgear DG834 (http://www.netgear-forum.com/forum/index.php?showtopic=6192)
 - Netgear WPNT834 (http://forum1.netgear.com/showthread.php?p=270354)
 - Netgear WG602, WGR614 (v3 doesn't work, maybe others...), DGN2000 (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
-- Linksys WAG120N, WAG160N, WRVS4400N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
+- Linksys WAG160N, WRVS4400N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - all SerComm manufactured devices (https://news.ycombinator.com/item?id=6998258)
 
 Backdoor is not working in:
@@ -41,6 +41,10 @@ Backdoor is not working in:
 - Netgear R7000 (https://twitter.com/LRFLEW/status/418856141032935424)
 - Netgear R6300 (https://github.com/elvanderb/TCP-32764/issues/15)
 - Netgear WN2500RP (https://github.com/elvanderb/TCP-32764/issues/15)
+- Linksys E3000 fwv 1.0.04 (https://github.com/elvanderb/TCP-32764/issues/16)
+- Netgear VMDG480 (aka. VirginMedia SuperHub) swv 2.38.01 (https://github.com/elvanderb/TCP-32764/issues/16)
+- Netgear VMDG485 (aka. VirginMedia SuperHub 2) swv1.01.26 (https://github.com/elvanderb/TCP-32764/issues/16)
+
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
