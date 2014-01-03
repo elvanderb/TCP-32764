@@ -84,16 +84,20 @@ elif args.print_conf :
 	conf = conf.replace("\x01", "\n\t")
 	print conf
 elif args.get_var is not None :
-	print send_message(s, endianness, 2, args.get_var)[1]
+	response = send_message(s, endianness, 2, args.get_var)[1].rstrip("\x00")
+	if len(response) == 0 :
+		print "%s is not set"%args.get_var
+	else :
+		print response
 elif args.set_var is not None :
-	r, _ = send_message(s, endianness, 3, args.set_var)[1]
+	r, _ = send_message(s, endianness, 3, args.set_var)
 elif args.message is not None :
-	r, response = send_message(s, endianness, args.message, args.payload)[1]
+	r, response = send_message(s, endianness, args.message, args.payload)
 	if r != 0 :
 		print "Command failed, error code: %08X"%r
 	elif len(response) != 0 :
 		print "Command succeed:"
-		print response
+		print response.encode("string_escape")
 	else :
 		print "Command succeed:"
 else :
