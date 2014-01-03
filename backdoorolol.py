@@ -20,8 +20,8 @@ parser.add_argument('--payload', type=str, nargs='?', help='message\'s payload',
 args = parser.parse_args()
 
 def send_message(s, endianness, message, payload=''):
-	header = struct.pack(endianness + 'III', 0x53634D4D, message, len(payload))
-	s.send(header+payload)
+	header = struct.pack(endianness + 'III', 0x53634D4D, message, len(payload)+1)
+	s.send(header+payload+"\x00")
 	r = s.recv(0xC)
 
 	while len(r) < 0xC:
