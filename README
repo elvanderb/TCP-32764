@@ -15,7 +15,7 @@ Backdoor confirmed in:
 - Netgear DG834G V2 firmware 4.01.40 (thanks Burn2 Dev)
 - Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
 - Linksys WAG120N (https://twitter.com/p_w999/status/418856260973252608/photo/1)
-- Linksys WAP4410N (https://github.com/elvanderb/TCP-32764/issues/11#issuecomment-31492435)
+- Cisco WAP4410N (https://github.com/elvanderb/TCP-32764/issues/11#issuecomment-31492435)
 - Linksys WAG160n (https://twitter.com/xxchinasaurxx/status/418886166700507136)
 - LevelOne WBR3460B (http://www.securityfocus.com/archive/101/507219/30/0/threaded)
 - Netgear DGN3500 (https://github.com/elvanderb/TCP-32764/issues/13)
@@ -44,7 +44,7 @@ Backdoor is not working in:
 - Linksys E3000 fwv 1.0.04 (https://github.com/elvanderb/TCP-32764/issues/16)
 - Netgear VMDG480 (aka. VirginMedia SuperHub) swv 2.38.01 (https://github.com/elvanderb/TCP-32764/issues/16)
 - Netgear VMDG485 (aka. VirginMedia SuperHub 2) swv1.01.26 (https://github.com/elvanderb/TCP-32764/issues/16)
-
+- Cisco E2000 fwv 1.0.02 (https://github.com/elvanderb/TCP-32764/issues/17)
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
