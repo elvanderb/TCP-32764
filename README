@@ -39,6 +39,8 @@ Backdoor is not working in:
 - Netgear WNDR4500 (https://twitter.com/TechnicalRah/status/418826996873834496)
 - Netgear WNDR4000 (https://github.com/elvanderb/TCP-32764/issues/10)
 - Netgear R7000 (https://twitter.com/LRFLEW/status/418856141032935424)
+- Netgear R6300 (https://github.com/elvanderb/TCP-32764/issues/15)
+- Netgear WN2500RP (https://github.com/elvanderb/TCP-32764/issues/15)
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
