@@ -16,6 +16,9 @@ Backdoor confirmed in:
 - Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
 - Linksys WAG120N (https://twitter.com/p_w999/status/418856260973252608/photo/1)
 - Linksys WAP4410N (https://github.com/elvanderb/TCP-32764/issues/11#issuecomment-31492435)
+- Linksys WAG160n (https://twitter.com/xxchinasaurxx/status/418886166700507136)
+- LevelOne WBR3460B (http://www.securityfocus.com/archive/101/507219/30/0/threaded)
+- Netgear DGN3500 (https://github.com/elvanderb/TCP-32764/issues/13)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
