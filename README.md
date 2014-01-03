@@ -27,9 +27,11 @@ Backdoor confirmed in:
 - LevelOne WBR3460B (http://www.securityfocus.com/archive/101/507219/30/0/threaded)
 - Netgear DGN3500 (https://github.com/elvanderb/TCP-32764/issues/13)
 - NetGear DG834 v3 (thanks jd)
-- Netgear DG834[GB, N] version < 5 (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
+- Netgear DG834[GB, N, PN] version < 5 (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
 - Netgear DGN2000B (https://github.com/elvanderb/TCP-32764/issues/26)
 - Linksys WRVS4400N (Firmware Version:V2.0.2.1) (https://github.com/elvanderb/TCP-32764/issues/29)
+- Lynksys WRT300N fw 2.00.17 (https://github.com/elvanderb/TCP-32764/issues/34)
+- NETGEAR JNR3210 (https://github.com/elvanderb/TCP-32764/issues/37)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
@@ -62,6 +64,7 @@ Backdoor is not working in:
 - NETGEAR WNR3500Lv2
 - WRT320N (https://github.com/elvanderb/TCP-32764/issues/31)
 - Netgear DGND3700 (https://github.com/elvanderb/TCP-32764/issues/33)
+- Cisco WRVS4400N (https://github.com/elvanderb/TCP-32764/issues/36)
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
