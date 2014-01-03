@@ -56,6 +56,7 @@ Backdoor is not working in:
 - NETGEAR CG3700EMR as provided by ComHem Sweden (https://github.com/elvanderb/TCP-32764/issues/20)
 - Netgear RP614v[4,2] V1.0.8_02.02 (https://github.com/elvanderb/TCP-32764/issues/22 https://github.com/elvanderb/TCP-32764/issues/24)
 - Netgear DG834G v5 (manufactured by Foxconn as opposed to the previous versions, nice finding anthologist https://github.com/elvanderb/TCP-32764/issues/28)
+- NETGEAR WNR3500Lv2
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
