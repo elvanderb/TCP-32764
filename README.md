@@ -4,7 +4,7 @@ If you don't understand something or want some details, feel free to fill an iss
 The backdoor may be present in other hardware, I'll update this readme accordingly :)
 
 Possible fix :
-- add a firewall rule in the web UI (https://twitter.com/domainzero/status/419146140999626752)
+- if it's listening on the internet: add a firewall rule in the web UI (https://twitter.com/domainzero/status/419146140999626752)
 
 Probable source of the backdoor: 
 - SerComm https://news.ycombinator.com/item?id=6998258 (nice finding :) )
