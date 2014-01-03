@@ -61,6 +61,7 @@ Backdoor is not working in:
 - Netgear DG834G v5 (manufactured by Foxconn as opposed to the previous versions, nice finding anthologist https://github.com/elvanderb/TCP-32764/issues/28)
 - NETGEAR WNR3500Lv2
 - WRT320N (https://github.com/elvanderb/TCP-32764/issues/31)
+- Netgear DGND3700 (https://github.com/elvanderb/TCP-32764/issues/33)
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
