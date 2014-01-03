@@ -23,6 +23,7 @@ Backdoor confirmed in:
 - NetGear DG834 v3 (thanks jd)
 - Netgear DG834[GB, N] version < 5 (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
 - Netgear DGN2000B (https://github.com/elvanderb/TCP-32764/issues/26)
+- Netgear DG834B V5.01.14 **/!\ LISTENING ON THE INTERNET /!\** (https://twitter.com/domainzero/status/419133964528263169)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
