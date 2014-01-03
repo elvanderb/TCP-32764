@@ -20,6 +20,8 @@ Backdoor confirmed in:
 - LevelOne WBR3460B (http://www.securityfocus.com/archive/101/507219/30/0/threaded)
 - Netgear DGN3500 (https://github.com/elvanderb/TCP-32764/issues/13)
 - NetGear DG834 v3 (thanks jd)
+- Netgear DG834[GB, N] (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
+- Netgear DGN2000B (https://github.com/elvanderb/TCP-32764/issues/26)
 
 Backdoor may be present in:
 - Netgear DG934 [probability: 99.99%] (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
@@ -45,6 +47,10 @@ Backdoor is not working in:
 - Netgear VMDG480 (aka. VirginMedia SuperHub) swv 2.38.01 (https://github.com/elvanderb/TCP-32764/issues/16)
 - Netgear VMDG485 (aka. VirginMedia SuperHub 2) swv1.01.26 (https://github.com/elvanderb/TCP-32764/issues/16)
 - Cisco E2000 fwv 1.0.02 (https://github.com/elvanderb/TCP-32764/issues/17)
+- Cisco Linksys E4200 V1 fwv 1.0.05 (https://github.com/elvanderb/TCP-32764/issues/18)
+- NETGEAR CG3700EMR as provided by ComHem Sweden (https://github.com/elvanderb/TCP-32764/issues/20)
+- Netgear RP614v[4,2] V1.0.8_02.02 (https://github.com/elvanderb/TCP-32764/issues/22 https://github.com/elvanderb/TCP-32764/issues/24)
+
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
