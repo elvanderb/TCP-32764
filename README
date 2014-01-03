@@ -31,6 +31,7 @@ Backdoor is not working in:
 - Netgear CG3100 (https://github.com/elvanderb/TCP-32764/issues/6)
 - Netgear WGR614v9 (https://github.com/elvanderb/TCP-32764/issues/7)
 - Linksys WRT54GS v1.52.8 build 001 (thanks Helmut Tessarek)
+- Linksys WRT54GL(v1.1) Firmware v4.30.16
 - Netgear WGR614v3 (https://github.com/elvanderb/TCP-32764/issues/8)
 - Netgear WNDR4500 (https://twitter.com/TechnicalRah/status/418826996873834496)
 - Netgear WNDR4000 (https://github.com/elvanderb/TCP-32764/issues/10)
