@@ -77,7 +77,8 @@ Backdoor is not working in:
 - Netgear WNR2000v3 (https://github.com/elvanderb/TCP-32764/issues/43)
 - Netgear DGN2200Bv3 (V1.1.00.23_1.00.23) (https://github.com/elvanderb/TCP-32764/issues/41)
 - Cisco Linksys X2000 (https://github.com/elvanderb/TCP-32764/issues/40)
-- Linksys WRT600N running 1.01.36 build 3 (https://twitter.com/shanetheclassic/status/419213153369485312)
+- Linksys WRT600N running 1.01.36 build 3 (https://twitter.com/shanetheclassic/status/419213153369485312 & https://github.com/elvanderb/TCP-32764/issues/46)
+- Netgear ProSafe FVS318G fwv 3.1.1-14 (thank you Jason Leake :) )
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
