@@ -5,7 +5,7 @@ The backdoor may be present in other hardware, I'll update this readme according
 
 Possible fix :
 - if it's listening on the internet: add a firewall rule in the web UI (https://twitter.com/domainzero/status/419146140999626752)
-- install an open source firmware (for example OpenWRT or Tomato).
+- install an open source firmware (for example OpenWRT or Tomato) this is NOT magical, OpenWAG200 is vuln: http://sourceforge.net/projects/openwag200/files/OpenWAG200/1.4/
 
 Probable source of the backdoor: 
 - SerComm https://news.ycombinator.com/item?id=6998258 (nice finding :) )
@@ -17,7 +17,7 @@ Backdoor **LISTENING ON THE INTERNET** confirmed in :
 - Netgear DGN2000 1.1.1, 1.1.11.0, 1.3.10.0, 1.3.11.0, 1.3.12.0 (https://github.com/elvanderb/TCP-32764/issues/44)
 - Cisco WAP4410N-E V02 2.0.1.0  V02 2,0,2,1  V02 2.0.3.3 V02 2.0.4.2 V02 2.0.5.3 V02 2.0.6.1 (https://github.com/elvanderb/TCP-32764/issues/44)
 - Linksys WAG120N (https://twitter.com/p_w999/status/419444989051940864/photo/1)
-
+- OpenWAG200 [maybe a little bit TOO open ;)] (https://github.com/elvanderb/TCP-32764/issues/49)
 
 Backdoor confirmed in:
 - Linksys WAG200G
