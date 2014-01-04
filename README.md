@@ -29,6 +29,7 @@ Backdoor confirmed in:
 - Netgear DG834G V2 and V3 firmware 4.01.40 and v3.01.32 (thanks Burn2 Dev)
 - Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
 - Cisco WAP4410N (https://github.com/elvanderb/TCP-32764/issues/11#issuecomment-31492435)
+- Cisco WRVS4400N
 - Linksys WAG160n v1 and v2 (https://twitter.com/xxchinasaurxx/status/418886166700507136 https://twitter.com/saltspork/status/419450202362097664)
 - LevelOne WBR3460B (http://www.securityfocus.com/archive/101/507219/30/0/threaded)
 - Netgear DGN3500 (https://github.com/elvanderb/TCP-32764/issues/13)
