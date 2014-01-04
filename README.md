@@ -17,7 +17,7 @@ Backdoor **LISTENING ON THE INTERNET** confirmed in :
 - Netgear DG834 V5.01.09 (https://github.com/elvanderb/TCP-32764/issues/44)
 - Netgear DG834B V5.01.14 (https://twitter.com/domainzero/status/419133964528263169)
 - Netgear DGN2000 1.1.1, 1.1.11.0, 1.3.10.0, 1.3.11.0, 1.3.12.0 (https://github.com/elvanderb/TCP-32764/issues/44)
-- OpenWAG200 maybe a little bit TOO open ;)
+- OpenWAG200 maybe a little bit TOO open ;) (https://github.com/elvanderb/TCP-32764/issues/49)
 
 Backdoor confirmed in:
 - Cisco WAP4410N (https://github.com/elvanderb/TCP-32764/issues/11#issuecomment-31492435)
@@ -45,7 +45,7 @@ Backdoor confirmed in:
 Backdoor may be present in:
 - all SerComm manufactured devices (https://news.ycombinator.com/item?id=6998258)
 - Linksys WAG160N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
-- Netgear DG934 probability: 99.99%
+- Netgear DG934 probability: probability: 99.99% (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
 - Netgear WG602, WGR614 (v3 doesn't work, maybe others...), DGN2000 (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - Netgear WPNT834 (http://forum1.netgear.com/showthread.php?p=270354)
 
