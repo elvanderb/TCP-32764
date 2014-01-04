@@ -35,7 +35,6 @@ Backdoor confirmed in:
 - NetGear DG834 v3 (thanks jd)
 - Netgear DG834[GB, N, PN] version < 5 (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
 - Netgear DGN2000B (https://github.com/elvanderb/TCP-32764/issues/26)
-- Linksys WRVS4400N (Firmware Version:V2.0.2.1) (https://github.com/elvanderb/TCP-32764/issues/29)
 - Lynksys WRT300N fw 2.00.17 (https://github.com/elvanderb/TCP-32764/issues/34)
 - NETGEAR JNR3210 (https://github.com/elvanderb/TCP-32764/issues/37)
 - Cisco WRVS4400N (https://github.com/elvanderb/TCP-32764/issues/36)
@@ -77,7 +76,6 @@ Backdoor is not working in:
 - Netgear WNR2000v3 (https://github.com/elvanderb/TCP-32764/issues/43)
 - Netgear DGN2200Bv3 (V1.1.00.23_1.00.23) (https://github.com/elvanderb/TCP-32764/issues/41)
 - Cisco Linksys X2000 (https://github.com/elvanderb/TCP-32764/issues/40)
-- D-LINK Router DIR-600
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
