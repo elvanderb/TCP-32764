@@ -25,6 +25,7 @@ Backdoor confirmed in:
 - Cisco WRVS4400N ([issue 36](https://github.com/elvanderb/TCP-32764/issues/36))
 - Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
 - LevelOne WBR3460B (http://www.securityfocus.com/archive/101/507219/30/0/threaded)
+- Linksys RVS4000 Firmware V1.3.3.5 ([issue 55](https://github.com/elvanderb/TCP-32764/issues/55))
 - Linksys WAG160n v1 and v2 ([@xxchinasaurxx](https://twitter.com/xxchinasaurxx/status/418886166700507136) [@saltspork](https://twitter.com/saltspork/status/419450202362097664))
 - Linksys WAG200G
 - Linksys WAG320N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
