@@ -79,6 +79,7 @@ Backdoor is not working in:
 - Cisco Linksys X2000 (https://github.com/elvanderb/TCP-32764/issues/40)
 - Linksys WRT600N running 1.01.36 build 3 (https://twitter.com/shanetheclassic/status/419213153369485312 & https://github.com/elvanderb/TCP-32764/issues/46)
 - Netgear ProSafe FVS318G fwv 3.1.1-14 (thank you Jason Leake :) )
+- Linksys E2500 (https://twitter.com/Antoniojojojo/status/419493174227529728) 
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
