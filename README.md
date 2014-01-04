@@ -16,6 +16,7 @@ Backdoor **LISTENING ON THE INTERNET** confirmed in :
 - WAP4410N-E V02 2.0.1.0, 2.0.3.3, 2.0.4.2, 2.0.6.1 (https://github.com/elvanderb/TCP-32764/issues/44)
 - Netgear DGN2000 1.1.1, 1.1.11.0, 1.3.10.0, 1.3.11.0, 1.3.12.0 (https://github.com/elvanderb/TCP-32764/issues/44)
 - Cisco WAP4410N-E V02 2.0.1.0  V02 2,0,2,1  V02 2.0.3.3 V02 2.0.4.2 V02 2.0.5.3 V02 2.0.6.1 (https://github.com/elvanderb/TCP-32764/issues/44)
+- Linksys WAG120N (https://twitter.com/p_w999/status/419444989051940864/photo/1)
 
 
 Backdoor confirmed in:
@@ -27,18 +28,18 @@ Backdoor confirmed in:
 - NETGEAR DGN1000 (don't know if there is a difference with the others N150 ones... https://github.com/elvanderb/TCP-32764/issues/27)
 - Netgear DG834G V2 and V3 firmware 4.01.40 and v3.01.32 (thanks Burn2 Dev)
 - Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
-- Linksys WAG120N (https://twitter.com/p_w999/status/418856260973252608/photo/1)
 - Cisco WAP4410N (https://github.com/elvanderb/TCP-32764/issues/11#issuecomment-31492435)
-- Linksys WAG160n (https://twitter.com/xxchinasaurxx/status/418886166700507136)
+- Linksys WAG160n v1 and v2 (https://twitter.com/xxchinasaurxx/status/418886166700507136 https://twitter.com/saltspork/status/419450202362097664)
 - LevelOne WBR3460B (http://www.securityfocus.com/archive/101/507219/30/0/threaded)
 - Netgear DGN3500 (https://github.com/elvanderb/TCP-32764/issues/13)
 - NetGear DG834 v3 (thanks jd)
-- Netgear DG834[GB, N, PN] version < 5 (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
+- Netgear DG834[GB, N, PN, GT] version < 5 (https://github.com/elvanderb/TCP-32764/issues/19 https://github.com/elvanderb/TCP-32764/issues/25)
 - Netgear DGN2000B (https://github.com/elvanderb/TCP-32764/issues/26)
 - Lynksys WRT300N fw 2.00.17 (https://github.com/elvanderb/TCP-32764/issues/34)
 - NETGEAR JNR3210 (https://github.com/elvanderb/TCP-32764/issues/37)
 - Cisco WRVS4400N (https://github.com/elvanderb/TCP-32764/issues/36)
 - Linksys WRT350N v2 fw 2.00.19 (https://github.com/elvanderb/TCP-32764/issues/39)
+- Linksys WAG54GS (https://twitter.com/henkka7/status/419210405399912448)
 
 
 Backdoor may be present in:
@@ -76,6 +77,7 @@ Backdoor is not working in:
 - Netgear WNR2000v3 (https://github.com/elvanderb/TCP-32764/issues/43)
 - Netgear DGN2200Bv3 (V1.1.00.23_1.00.23) (https://github.com/elvanderb/TCP-32764/issues/41)
 - Cisco Linksys X2000 (https://github.com/elvanderb/TCP-32764/issues/40)
+- Linksys WRT600N running 1.01.36 build 3 (https://twitter.com/shanetheclassic/status/419213153369485312)
 
 Some clarifications:
 I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
