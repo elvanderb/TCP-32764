@@ -20,7 +20,7 @@ Backdoor **LISTENING ON THE INTERNET** confirmed in :
 - OpenWAG200 maybe a little bit TOO open ;) ([issue 49](https://github.com/elvanderb/TCP-32764/issues/49))
 
 Backdoor confirmed in:
-- Cisco WAP4410N ([issue 11](https://github.com/elvanderb/TCP-32764/issues/11)#issuecomment-31492435)
+- Cisco WAP4410N ([issue 11](https://github.com/elvanderb/TCP-32764/issues/11#issuecomment-31492435))
 - Cisco WRVS4400N
 - Cisco WRVS4400N ([issue 36](https://github.com/elvanderb/TCP-32764/issues/36))
 - Diamond DSL642WLG / SerComm IP806Gx v2 TI (https://news.ycombinator.com/item?id=6998682)
