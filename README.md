@@ -1,8 +1,9 @@
-If you want to report vulnerable or non vulnerable routers, please **USE THE POC** and paste the result in your issue.
+**I WILL NOT MANUALLY UPDATE THIS REPOSITORY ANYMORE**
+
+If you want to add a router in the list, please make a pull-request, also remember to **USE THE POC** and paste the result in your pull-request.
 Telnet clients and other solutions may not be relevant (some false negative / positive reported).
 
 Some random code/data about the backdoor I found in my Linksys WAG200G (TCP/32764).
-If you don't understand something or want some details, feel free to fill an issue.
 
 The backdoor may be present in other hardware, I'll update this readme accordingly :)
 
@@ -77,6 +78,7 @@ Backdoor is not working in:
 - Netgear DGN2200Bv3 (V1.1.00.23_1.00.23) ([issue 41](https://github.com/elvanderb/TCP-32764/issues/41))
 - Netgear DGND3700 ([issue 33](https://github.com/elvanderb/TCP-32764/issues/33))
 - Netgear ProSafe FVS318G fwv 3.1.1-14 (thank you Jason Leake :) )
+- Netgear R4500 firmware V1.0.0.4_1.0.3 ([issue 64](https://github.com/elvanderb/TCP-32764/issues/64))
 - Netgear R6300 ([issue 15](https://github.com/elvanderb/TCP-32764/issues/15))
 - Netgear R7000 ([@LRFLEW](https://twitter.com/LRFLEW/status/418856141032935424))
 - Netgear RP614v[4,2] V1.0.8_02.02 ([issue 22](https://github.com/elvanderb/TCP-32764/issues/22) & [issue 24](https://github.com/elvanderb/TCP-32764/issues/24))
@@ -90,6 +92,7 @@ Backdoor is not working in:
 - Netgear WNDR4000 ([issue 10](https://github.com/elvanderb/TCP-32764/issues/10))
 - Netgear WNDR4500 ([@TechnicalRah](https://twitter.com/TechnicalRah/status/418826996873834496))
 - Netgear WNR2000v3 ([issue 43](https://github.com/elvanderb/TCP-32764/issues/43))
+- Netgear WNR3500L firmware V1.2.2.30_34.0.37 ([issue 65](https://github.com/elvanderb/TCP-32764/issues/65))
 - Netgear WNR3500Lv2
 
 Some clarifications:
