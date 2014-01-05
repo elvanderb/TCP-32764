@@ -41,6 +41,7 @@ Backdoor confirmed in:
 - Netgear DGN1000[B] N150 ([issue 3](https://github.com/elvanderb/TCP-32764/issues/3))
 - Netgear DGN2000B ([issue 26](https://github.com/elvanderb/TCP-32764/issues/26))
 - Netgear DGN3500 ([issue 13](https://github.com/elvanderb/TCP-32764/issues/13))
+- Netgear DGND3300 ([issue 56](https://github.com/elvanderb/TCP-32764/issues/56))
 - Netgear DM111Pv2 ([@eguaj](https://twitter.com/eguaj/status/418143024019816448))
 - Netgear JNR3210 ([issue 37](https://github.com/elvanderb/TCP-32764/issues/37))
 
