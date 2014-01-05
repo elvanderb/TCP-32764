@@ -5,6 +5,7 @@ The backdoor may be present in other hardware, I'll update this readme according
 
 Possible fix :
 - if it's listening on the internet: add a firewall rule in the web UI ([@domainzero](https://twitter.com/domainzero/status/419146140999626752))
+- it also seems to work on the LAN side. ([issue 35](https://github.com/elvanderb/TCP-32764/issues/35#issuecomment-31592308))
 - install an open source firmware (for example OpenWRT or Tomato) this is NOT magical, OpenWAG200 is vuln: http://sourceforge.net/projects/openwag200/files/OpenWAG200/1.4/
 
 Probable source of the backdoor: 
