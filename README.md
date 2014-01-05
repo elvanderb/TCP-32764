@@ -1,3 +1,6 @@
+If you want to report vulnerable or non vulnerable routers, please **USE THE POC**.
+Telnet clients and other solution may not be relevant (some false negative / positive reported).
+
 Some random code/data about the backdoor I found in my Linksys WAG200G (TCP/32764).
 If you don't understand something or want some details, feel free to fill an issue.
 
