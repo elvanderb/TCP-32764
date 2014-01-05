@@ -11,6 +11,7 @@ Possible fix :
 - it also seems to work on the LAN side. ([issue 35](https://github.com/elvanderb/TCP-32764/issues/35#issuecomment-31592308))
 - but apparently, not for every body ([issue 57](https://github.com/elvanderb/TCP-32764/issues/57)) so use the PoC again after adding the rule to make sure the firewall does its job.
 - install an open source firmware (for example OpenWRT or Tomato) this is NOT magical, OpenWAG200 is vuln: http://sourceforge.net/projects/openwag200/files/OpenWAG200/1.4/
+- kill the backdoor after each reboot ([issue 61](https://github.com/elvanderb/TCP-32764/issues/61) & [TCP-32764-First-Aid](https://github.com/lahdekorpi/TCP-32764-First-Aid/))
 
 Probable source of the backdoor: 
 - SerComm https://news.ycombinator.com/item?id=6998258 (nice finding :) )
@@ -18,7 +19,6 @@ Probable source of the backdoor:
 Backdoor **LISTENING ON THE INTERNET** confirmed in :
 - Cisco WAP4410N-E 2.0.1.0, 2.0.3.3, 2.0.4.2, 2.0.6.1 ([issue 44](https://github.com/elvanderb/TCP-32764/issues/44))
 - Linksys WAG120N ([@p_w999](https://twitter.com/p_w999/status/419444989051940864))
-- Netgear DG834 V5.01.09 ([issue 44](https://github.com/elvanderb/TCP-32764/issues/44))
 - Netgear DG834B V5.01.14 ([@domainzero](https://twitter.com/domainzero/status/419133964528263169))
 - Netgear DGN2000 1.1.1, 1.1.11.0, 1.3.10.0, 1.3.11.0, 1.3.12.0 ([issue 44](https://github.com/elvanderb/TCP-32764/issues/44))
 - OpenWAG200 maybe a little bit TOO open ;) ([issue 49](https://github.com/elvanderb/TCP-32764/issues/49))
@@ -39,9 +39,7 @@ Backdoor confirmed in:
 - Linksys WAG54GS ([@henkka7](https://twitter.com/henkka7/status/419210405399912448))
 - Linksys WRT350N v2 fw 2.00.19 ([issue 39](https://github.com/elvanderb/TCP-32764/issues/39))
 - Linksys WRT300N fw 2.00.17 ([issue 34](https://github.com/elvanderb/TCP-32764/issues/34))
-- NetGear DG834 v3 (thanks jd)
-- Netgear DG834[GB, N, PN, GT] version < 5 ([issue 19](https://github.com/elvanderb/TCP-32764/issues/19) & [issue 25](https://github.com/elvanderb/TCP-32764/issues/25))
-- Netgear DG834G V2 and V3 firmware 4.01.40 and v3.01.32 (thanks Burn2 Dev)
+- Netgear DG834[∅, GB, N, PN, GT] version < 5 ([issue 19](https://github.com/elvanderb/TCP-32764/issues/19) & [issue 25](https://github.com/elvanderb/TCP-32764/issues/25) & [issue 62](https://github.com/elvanderb/TCP-32764/issues/62) & jd & Burn2 Dev)
 - Netgear DGN1000 (don't know if there is a difference with the others N150 ones... [issue 27](https://github.com/elvanderb/TCP-32764/issues/27))
 - Netgear DGN1000[B] N150 ([issue 3](https://github.com/elvanderb/TCP-32764/issues/3))
 - Netgear DGN2000B ([issue 26](https://github.com/elvanderb/TCP-32764/issues/26))
@@ -55,7 +53,7 @@ Backdoor may be present in:
 - all SerComm manufactured devices (https://news.ycombinator.com/item?id=6998258)
 - Linksys WAG160N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - Netgear DG934 probability: probability: 99.99% (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
-- Netgear WG602, WGR614 (v3 doesn't work, maybe others...), DGN2000 (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
+- Netgear WG602, WGR614 (v3 doesn't work, maybe others...) (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - Netgear WPNT834 (http://forum1.netgear.com/showthread.php?p=270354)
 
 Backdoor is not working in:
