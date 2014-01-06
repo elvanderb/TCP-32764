@@ -77,6 +77,7 @@ Backdoor is not working in:
 - Netgear DG834G v5 (manufactured by Foxconn as opposed to the previous versions, nice finding anthologist [issue 28](https://github.com/elvanderb/TCP-32764/issues/28))
 - Netgear DGN2200Bv3 (V1.1.00.23_1.00.23) ([issue 41](https://github.com/elvanderb/TCP-32764/issues/41))
 - Netgear DGND3700 ([issue 33](https://github.com/elvanderb/TCP-32764/issues/33))
+- Netgear DGND4000 (V1.1.00.14_1.00.14) ([issue 67](https://github.com/elvanderb/TCP-32764/issues/67))
 - Netgear ProSafe FVS318G fwv 3.1.1-14 (thank you Jason Leake :) )
 - Netgear R4500 firmware V1.0.0.4_1.0.3 ([issue 64](https://github.com/elvanderb/TCP-32764/issues/64))
 - Netgear R6300 ([issue 15](https://github.com/elvanderb/TCP-32764/issues/15))
