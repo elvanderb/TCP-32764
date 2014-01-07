@@ -65,6 +65,8 @@ Backdoor is not working in:
 - Linksys E2500 ([@Antoniojojojo](https://twitter.com/Antoniojojojo/status/419493174227529728))
 - Linksys E3000 fwv 1.0.04 ([issue 16](https://github.com/elvanderb/TCP-32764/issues/16))
 - Linksys E4200 Firmware Version: 2.0.26 ([issue 53](https://github.com/elvanderb/TCP-32764/issues/53))
+- Linksys WRT100 fwv 1.0.00 ([Issue 71](https://github.com/elvanderb/TCP-32764/issues/71))
+- Linksys WRT110 fwv 1.0.07 ([issue 70](https://github.com/elvanderb/TCP-32764/issues/70))
 - Linksys WRT120N fwv 1.0.07 ([@viniciuskmax](https://twitter.com/viniciuskmax/status/419886554245394432))
 - Linksys WRT160Nv2 ([issue 43](https://github.com/elvanderb/TCP-32764/issues/43))
 - Linksys WRT320N ([issue 31](https://github.com/elvanderb/TCP-32764/issues/31))
