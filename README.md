@@ -59,6 +59,7 @@ Backdoor may be present in:
 
 Backdoor is not working in:
 - Belkin F5D7230-4 6000 (SerComm manufactured product) ([issue 51](https://github.com/elvanderb/TCP-32764/issues/51))
+- Belkin F9K1002 v3 (SerComm manufactured product)
 - Cisco E2000 fwv 1.0.02 ([issue 17](https://github.com/elvanderb/TCP-32764/issues/17))
 - Cisco Linksys E4200 V1 fwv 1.0.05 ([issue 18](https://github.com/elvanderb/TCP-32764/issues/18))
 - Cisco Linksys X2000 ([issue 40](https://github.com/elvanderb/TCP-32764/issues/40))
