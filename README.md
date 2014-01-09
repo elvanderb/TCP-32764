@@ -22,6 +22,7 @@ Backdoor **LISTENING ON THE INTERNET** confirmed in :
 - Linksys WAG120N ([@p_w999](https://twitter.com/p_w999/status/419444989051940864))
 - Netgear DG834B V5.01.14 ([@domainzero](https://twitter.com/domainzero/status/419133964528263169))
 - Netgear DGN2000 1.1.1, 1.1.11.0, 1.3.10.0, 1.3.11.0, 1.3.12.0 ([issue 44](https://github.com/elvanderb/TCP-32764/issues/44))
+- Netgear WPNT834 ([issue 79](https://github.com/elvanderb/TCP-32764/issues/79))
 - OpenWAG200 maybe a little bit TOO open ;) ([issue 49](https://github.com/elvanderb/TCP-32764/issues/49))
 
 Backdoor confirmed in:
@@ -55,7 +56,6 @@ Backdoor may be present in:
 - Linksys WAG160N (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
 - Netgear DG934 probability: probability: 99.99% (http://codeinsecurity.wordpress.com/category/reverse-engineering/)
 - Netgear WG602, WGR614 (v3 doesn't work, maybe others...) (http://zaufanatrzeciastrona.pl/post/smieszna-tylna-furtka-w-ruterach-linksysa-i-prawdopodobnie-netgeara/)
-- Netgear WPNT834 (http://forum1.netgear.com/showthread.php?p=270354)
 
 Backdoor is not working in:
 - Belkin F5D7230-4 6000 (SerComm manufactured product) ([issue 51](https://github.com/elvanderb/TCP-32764/issues/51))
