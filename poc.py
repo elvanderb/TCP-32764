@@ -128,6 +128,9 @@ else :
 
 s.close()
 
+# Gives the login/pass of your router. Works for Linux for sure.
+# python poc.py --get_credentials --ip $(ip route|grep -Eo 'default via ([0-9.]+)'|sed 's/default via //')
+
 #commands :
 # 1 : get infos
 # 2 : get var -> possible overflow
