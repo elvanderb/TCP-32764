@@ -16,6 +16,8 @@ Possible fix :
 
 Probable source of the backdoor: 
 - SerComm https://news.ycombinator.com/item?id=6998258 (nice finding :) )
+- Confirmed by a header ([socket_header.h](https://github.com/elvanderb/TCP-32764/blob/master/socket_header.h)) in [cisco gpl sources](ftp://ftp-eng.cisco.com/pub/opensource/smallbusiness/wap4410n/2.0.1.0/wap4410n_v2.0.1.0_gpl.tgz) (thank you Andreas Fett!)
+
 
 Backdoor **LISTENING ON THE INTERNET** confirmed in :
 - Cisco WAP4410N-E 2.0.1.0, 2.0.3.3, 2.0.4.2, 2.0.6.1 ([issue 44](https://github.com/elvanderb/TCP-32764/issues/44))
