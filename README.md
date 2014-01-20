@@ -20,7 +20,6 @@ Probable source of the backdoor:
 
 
 Backdoor **LISTENING ON THE INTERNET** confirmed in :
-- Cisco WAP4410N-E 2.0.1.0, 2.0.3.3, 2.0.4.2, 2.0.6.1 ([issue 44](https://github.com/elvanderb/TCP-32764/issues/44))
 - Linksys WAG120N ([@p_w999](https://twitter.com/p_w999/status/419444989051940864))
 - Netgear DG834B V5.01.14 ([@domainzero](https://twitter.com/domainzero/status/419133964528263169))
 - Netgear DGN2000 1.1.1, 1.1.11.0, 1.3.10.0, 1.3.11.0, 1.3.12.0 ([issue 44](https://github.com/elvanderb/TCP-32764/issues/44))
