@@ -83,6 +83,7 @@ Backdoor is not working in:
 - Netgear CG3700EMR as provided by ComHem Sweden ([issue 20](https://github.com/elvanderb/TCP-32764/issues/20))
 - Netgear DG834G v5 (manufactured by Foxconn as opposed to the previous versions, nice finding anthologist [issue 28](https://github.com/elvanderb/TCP-32764/issues/28))
 - Netgear DGN2200Bv3 (V1.1.00.23_1.00.23) ([issue 41](https://github.com/elvanderb/TCP-32764/issues/41))
+- Netgear DGN3500 (amod 9.3.1 based on official 1.1.00.34 - http://alfie.altervista.org/amod)
 - Netgear DGND3700 ([issue 33](https://github.com/elvanderb/TCP-32764/issues/33))
 - Netgear DGND4000 (V1.1.00.14_1.00.14) ([issue 67](https://github.com/elvanderb/TCP-32764/issues/67))
 - Netgear ProSafe FVS318G fwv 3.1.1-14 (thank you Jason Leake :) )
