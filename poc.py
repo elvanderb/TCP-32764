@@ -92,19 +92,19 @@ elif args.print_conf :
 	print(conf)
 elif args.get_credentials :
 	conf = send_message(s, endianness, 1)[1]
-        lines = re.split("\x00|\x01", conf)
-        pattern = re.compile('user(name)?|password|login');
-        credentials = []
-        for line in lines:
-            try:
-                (var, value) = line.split("=")
-                if len(value)>0 and pattern.search(var):
-                    credentials += [[var, value]]
-            except ValueError:
-                pass
-        credentials.sort()
-        for var, value in credentials:
-            print("{}:{}".format(var, value))
+	lines = re.split("\x00|\x01", conf)
+	pattern = re.compile('user(name)?|password|login');
+	credentials = []
+	for line in lines:
+		try:
+			(var, value) = line.split("=")
+			if len(value)>0 and pattern.search(var):
+				credentials += [[var, value]]
+		except ValueError:
+			pass
+		credentials.sort()
+		for var, value in credentials:
+			print("{}:{}".format(var, value))
 
 elif args.get_var is not None :
 	response = send_message(s, endianness, 2, args.get_var)[1].rstrip("\x00")
