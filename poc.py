@@ -105,9 +105,9 @@ elif args.get_credentials :
 				credentials += [[var, value]]
 		except ValueError:
 			pass
-		credentials.sort()
-		for var, value in credentials:
-			print("{}:{}".format(var, value))
+	credentials.sort()
+	for var, value in credentials:
+		print("{}:{}".format(var, value))
 elif args.send_file:
     with open(args.send_file, "r") as f:
         buf = f.read()
