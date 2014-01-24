@@ -5,7 +5,7 @@ Telnet clients and other solutions may not be relevant (some false negative / po
 
 Some random code/data about the backdoor I found in my Linksys WAG200G (TCP/32764).
 
-The backdoor may be present in other hardware, I'll update this readme accordingly :)
+The backdoor may be present in other hardware, I'll update this readme accordingly. :)
 
 Possible fix :
 - if it's listening on the internet: add a firewall rule in the web UI ([@domainzero](https://twitter.com/domainzero/status/419146140999626752))
@@ -105,6 +105,6 @@ Backdoor is not working in:
 - Netgear WNR3500Lv2
 
 Some clarifications:
-I didn't want to lose my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad
+I didn't want to waste my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad.
  
-I had a lot of fun in writing / drawing those slides, all the necessary informations are in them, if people don't understand them or find them "too full of meme" then - well - it's too bad for them :)
+I had a lot of fun in writing / drawing the slides, all the necessary information is in them.  If people don't understand them or find them "too full of meme" then - well - it's too bad for them. :)
