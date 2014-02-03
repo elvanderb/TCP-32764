@@ -13,6 +13,7 @@ Possible fix :
 - but apparently, not for every body ([issue 57](https://github.com/elvanderb/TCP-32764/issues/57)) so use the PoC again after adding the rule to make sure the firewall does its job.
 - install an open source firmware (for example OpenWRT or Tomato) this is NOT magical, OpenWAG200 is vuln: http://sourceforge.net/projects/openwag200/files/OpenWAG200/1.4/
 - kill the backdoor after each reboot ([issue 61](https://github.com/elvanderb/TCP-32764/issues/61) & [TCP-32764-First-Aid](https://github.com/lahdekorpi/TCP-32764-First-Aid/))
+- use this alternative firmware: ([amod](http://alfie.altervista.org/amod/) [issue #13](https://github.com/elvanderb/TCP-32764/issues/13#issuecomment-34008200), thank you nremond)
 
 Probable source of the backdoor: 
 - SerComm https://news.ycombinator.com/item?id=6998258 (nice finding :) )
