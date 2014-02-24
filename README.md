@@ -104,6 +104,7 @@ Backdoor is not working in:
 - Netgear WNR2000v3 ([issue 43](https://github.com/elvanderb/TCP-32764/issues/43))
 - Netgear WNR3500L firmware V1.2.2.30_34.0.37 ([issue 65](https://github.com/elvanderb/TCP-32764/issues/65))
 - Netgear WNR3500Lv2
+- Sercomm AD81ABA
 
 Some clarifications:
 I didn't want to waste my time in writing a full report, it's a very simple backdoor that really doesn't deserve more than some crappy slides. Moreover, my English is quite bad.
