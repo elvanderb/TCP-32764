@@ -29,7 +29,7 @@ Backdoor **LISTENING ON THE INTERNET** confirmed in :
 - OpenWAG200 maybe a little bit TOO open ;) ([issue 49](https://github.com/elvanderb/TCP-32764/issues/49))
 
 Backdoor confirmed in:
-- Cisco RVS4000 fwv 2.0.3.2 ([issue 57](https://github.com/elvanderb/TCP-32764/issues/57))
+- Cisco RVS4000 fwv 2.0.3.2 & 1.3.0.5 ([issue 57](https://github.com/elvanderb/TCP-32764/issues/57))
 - Cisco WAP4410N ([issue 11](https://github.com/elvanderb/TCP-32764/issues/11#issuecomment-31492435))
 - Cisco WRVS4400N
 - Cisco WRVS4400N ([issue 36](https://github.com/elvanderb/TCP-32764/issues/36))
