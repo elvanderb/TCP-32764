@@ -78,6 +78,7 @@ Backdoor is not working in:
 - Linksys WRT110 fwv 1.0.07 ([issue 70](https://github.com/elvanderb/TCP-32764/issues/70))
 - Linksys WRT120N fwv 1.0.07 ([@viniciuskmax](https://twitter.com/viniciuskmax/status/419886554245394432))
 - Linksys WRT160Nv2 ([issue 43](https://github.com/elvanderb/TCP-32764/issues/43))
+- Linksys WRT160Nv3 
 - Linksys WRT320N ([issue 31](https://github.com/elvanderb/TCP-32764/issues/31))
 - Linksys WRT54GL(v1.1) Firmware v4.30.16
 - Linksys WRT54GS v1.52.8 build 001 (thanks Helmut Tessarek)
